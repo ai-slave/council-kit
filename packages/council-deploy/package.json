@@ -49,6 +49,7 @@
     "load-contracts": "sh scripts/load-contracts.sh",
     "goerli:deploy-contracts": "cross-env TS_NODE_TRANSPILE_ONLY=1 npx hardhat run src/goerli.ts --network goerli --no-compile",
     "goerli:mint-voting-tokens": "cross-env TS_NODE_TRANSPILE_ONLY=1 npx hardhat run src/votingToken/promptMintFromListOfVotingTokens.ts --network goerli --no-compile",
+    "throwaway": "cross-env TS_NODE_TRANSPILE_ONLY=1 npx hardhat run src/votingToken/mintTokensToAddress.ts --network goerli --no-compile",
     "goerli:deposit-voting-tokens-into-locking-vault": "cross-env TS_NODE_TRANSPILE_ONLY=1 npx hardhat run src/vaults/lockingVault/promptChooseLockingVaultAndDepositTokens.ts --network goerli --no-compile"
   }
 }
